@@ -1,0 +1,21 @@
+{
+	"name": "emote",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server": "nodemon",
+		"build:server": "npx tsc",
+		"client": "npm run start --prefix client",
+		"start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^5.2.0",
+		"nodemon": "^2.0.4",
+		"ts-node": "^8.10.2",
+		"typescript": "^3.9.5"
+	}
+}
