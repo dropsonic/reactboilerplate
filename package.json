@@ -10,7 +10,9 @@
 		"build:client": "npm run build --prefix client",
 		"start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
 		"build": "npm run build:server && npm run build:client",
-		"lint:server": "eslint ./src --ext .ts"
+		"lint:server": "eslint ./src --ext .ts",
+		"lint:client": "npm run lint --prefix client",
+		"lint": "npm run lint:server -s && npm run lint:client -s"
 	},
 	"keywords": [],
 	"author": "",
