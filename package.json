@@ -7,7 +7,9 @@
 		"server": "nodemon",
 		"build:server": "npx tsc",
 		"client": "npm run start --prefix client",
-		"start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+		"build:client": "npm run build --prefix client",
+		"start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+		"build": "npm run build:server && npm run build:client"
 	},
 	"keywords": [],
 	"author": "",
