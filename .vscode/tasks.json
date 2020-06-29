@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": { "kind": "build", "isDefault": true },
+			"problemMatcher": [],
+			"label": "Build All",
+			"detail": "npm run build"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "Start All",
+			"detail": "npm run start",
+			// "isBackground": true
+		},
+		{
+			"type": "npm",
+			"script": "lint",
+			"problemMatcher": [ "$eslint-stylish" ],
+			"label": "Lint All",
+			"detail": "npm run lint"
+		}
+		{
+			"type": "npm",
+			"script": "format",
+			"problemMatcher": [ ],
+			"label": "Format All",
+			"detail": "npm run format"
+		}
+	]
+}
