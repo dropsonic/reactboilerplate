@@ -5,7 +5,12 @@ module.exports = {
 		project: './tsconfig.json'
 	},
 	plugins: [ '@typescript-eslint' ],
-	extends: [ 'airbnb-typescript/base', 'eslint:recommended', 'plugin:@typescript-eslint/recommended' ],
+	extends: [
+		'airbnb-typescript/base',
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:prettier/recommended'
+	],
 	env: {
 		browser: true,
 		es6: true,

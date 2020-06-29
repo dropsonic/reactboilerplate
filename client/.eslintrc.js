@@ -8,7 +8,14 @@ module.exports = {
 		}
 	},
 	plugins: [ '@typescript-eslint' ],
-	extends: [ 'airbnb-typescript', 'airbnb/hooks', 'react-app', 'plugin:@typescript-eslint/recommended' ],
+	extends: [
+		'airbnb-typescript',
+		'airbnb/hooks',
+		'react-app',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:prettier/recommended',
+		'prettier/react'
+	],
 	env: {
 		browser: true,
 		// es6: true,
