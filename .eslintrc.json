@@ -5,15 +5,19 @@
 		"project": "./tsconfig.json"
 	},
 	"plugins": [
-		"@typescript-eslint"
+		"@typescript-eslint",
+		"prettier",
+		"unicorn"
 	],
 	"extends": [
 		"airbnb-typescript/base",
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
+		"plugin:unicorn/recommended",
 		"prettier",
 		"plugin:prettier/recommended",
-		"prettier/@typescript-eslint"
+		"prettier/@typescript-eslint",
+		"prettier/unicorn"
 	],
 	"env": {
 		"es6": true,

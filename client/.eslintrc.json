@@ -8,16 +8,20 @@
 		}
 	},
 	"plugins": [
-		"@typescript-eslint"
+		"@typescript-eslint",
+		"prettier",
+		"unicorn"
 	],
 	"extends": [
 		"airbnb-typescript",
 		"airbnb/hooks",
 		"react-app",
 		"plugin:@typescript-eslint/recommended",
+		"plugin:unicorn/recommended",
 		"prettier",
 		"plugin:prettier/recommended",
 		"prettier/@typescript-eslint",
+		"prettier/unicorn",
 		"prettier/react"
 	],
 	"env": {
