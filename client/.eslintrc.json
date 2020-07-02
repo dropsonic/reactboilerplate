@@ -15,7 +15,9 @@
 		"airbnb/hooks",
 		"react-app",
 		"plugin:@typescript-eslint/recommended",
+		"prettier",
 		"plugin:prettier/recommended",
+		"prettier/@typescript-eslint",
 		"prettier/react"
 	],
 	"env": {

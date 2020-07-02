@@ -4,12 +4,16 @@
 	"parserOptions": {
 		"project": "./tsconfig.json"
 	},
-	"plugins": [ "@typescript-eslint" ],
+	"plugins": [
+		"@typescript-eslint"
+	],
 	"extends": [
 		"airbnb-typescript/base",
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
-		"plugin:prettier/recommended"
+		"prettier",
+		"plugin:prettier/recommended",
+		"prettier/@typescript-eslint"
 	],
 	"env": {
 		"es6": true,
