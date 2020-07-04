@@ -15,7 +15,8 @@
 		"lint": "npm run lint:server -s && npm run lint:client -s",
 		"format:server": "prettier --write src/**/*.{ts,tsx,scss,css,json}",
 		"format:client": "npm run format --prefix client",
-		"format": "npm run format:server && npm run format:client"
+		"format": "npm run format:server && npm run format:client",
+		"test:client": "npm run test --prefix client"
 	},
 	"keywords": [],
 	"author": "",
