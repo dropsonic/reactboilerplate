@@ -29,5 +29,50 @@
 		"jest": true,
 		"es6": true
 	},
-	"rules": {}
+	"rules": {
+		"unicorn/filename-case": [
+			"error",
+			{
+				"case": "camelCase"
+			}
+		]
+	},
+	"overrides": [
+		{
+			"files": [
+				"*.tsx"
+			],
+			"rules": {
+				"unicorn/filename-case": [
+					"error",
+					{
+						"case": "pascalCase"
+					}
+				]
+			}
+		},
+		{
+			"files": [
+				"index.tsx"
+			],
+			"rules": {
+				"unicorn/filename-case": [
+					"error",
+					{
+						"case": "camelCase"
+					}
+				]
+			}
+		},
+		{
+			"files": [
+				"*.test.*"
+			],
+			"rules": {
+				"unicorn/filename-case": [
+					"off"
+				]
+			}
+		}
+	]
 }
