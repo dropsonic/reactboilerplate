@@ -9,6 +9,9 @@
 	},
 	"plugins": [
 		"@typescript-eslint",
+		"import",
+		"jsx-a11y",
+		"react",
 		"prettier",
 		"unicorn"
 	],
